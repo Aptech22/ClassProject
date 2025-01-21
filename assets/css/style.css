@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+*
+{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: relative;
+    z-index: 1000000;
+}
+p
+{
+    font-size: 1.15rem;
+}
+.navbar
+{
+    position: fixed;
+    background: transparent !important;
+    transition: 0.5s;
+    z-index: 999;
+}
+.navbar.scrolled
+{
+    background: #000 !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link 
+{
+    color: rgba(0,0,0,.9);
+    background: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover
+{
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    color: rgba(255,255,255,.8);
+    transition: color 0.3s ease-in-out;
+
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: rgba(255,255,255,.1);
+}
+.navbar-light .navbar-brand
+{
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+.banner
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../1.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.banner:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000,transparent);
+    pointer-events: none;
+}
+.banner:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#000,transparent);
+    pointer-events: none;
+}
+.height100p
+{
+    height: 100vh;
+}
+.h100
+{
+    height: 100%;
+}
+.contentBox
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.contentBox h1
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.contentBox p
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.sec1
+{
+    padding: 100px 0;
+    background: #000;
+}
+.headerText
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.headerText h2
+{
+    font-size: 2.5rem;
+}
+.placeBox
+{
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    margin-top: 30px;
+}
+.placebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placebox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.placebox .imgBX {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.placebox .imgBX img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.placebox .imgBX img:hover {
+    transform: scale(1.05);
+}
+
+.placebox .content h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.placebox .content span {
+    font-size: 14px;
+    color: #777;
+}
+
+.sec2
+{
+    position: relative;
+    background: url(../1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+.sec2 h2
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+.sec2 {
+    position: relative;
+    background: url(../greg-willson-KpoalRBfTds-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+.sec2:before,
+.sec2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec2:before {
+    top: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(#000, transparent); 
+}
+
+.sec2:after {
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(360deg, #000, transparent); 
+}
+
+.sec2 h2 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center; 
+    position: relative;
+    z-index: 10; 
+}
+.btnD1
+{
+    border: 2px solid #fff;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.15rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.sec3
+{
+    position: relative;
+    padding: 100px 0;
+    background: #000;
+}
+.blogpost {
+    position: relative;
+    width: 80%; 
+    max-width: 500px; 
+    margin: 20px auto; 
+    background: #fff; 
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.blogpost .imgBx {
+    height: 180px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.blogpost .imgBx img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.blogpost .headerText {
+    padding: 10px;
+    text-align: center;
+}
+
+.blogpost .headerText h1 {
+    margin: 0;
+    padding: 5px 0; 
+    font-weight: 600;
+    font-size: 1.1rem; 
+}
+
+.blogpost .content {
+    padding: 10px; 
+    text-align: justify; 
+    flex-grow: 1; 
+}
+
+.blogpost .content p {
+    margin: 0; 
+    line-height: 1.5rem; 
+}
+
+.btnD2
+{
+    background: #262626;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 10px auto; 
+    text-align: center;
+    width: fit-content; 
+}
+.contact
+{
+    position: relative;
+    padding: 100px 0;
+    background: url(../chris-abney-qLW70Aoo8BE-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.contact:before,
+.contact:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.contact:before {
+    top: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(#000, transparent); 
+}
+
+.contact:after {
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(360deg, #000, transparent); 
+}
+.contact form
+{
+    position: relative;
+    z-index: 1000;
+}
+.contact .form-control
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    height: 50px;
+    border-radius: 0;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    box-shadow: none;
+}
+.contact .textarea
+{
+    min-height: 100px;
+}
+.contact label
+{
+    color: #fff;
+    font-size: 1.25rem;
+}
+footer
+{
+    background: #000;
+    padding: 50px 0 0;
+}
+.sci
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a
+{
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover
+{
+    color: #fff;
+}
+.cpryt
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}
+.cpryt a,
+.cpryt a:hover
+{
+    color: #fff;
+}
+@media (min-width: 992px)
+{
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    padding-right: .1rem;
+    padding-left: .1rem;
+}
+}
+@media (min-width: 992px)
+{
+    .navbar-light .navbar-toggler
+    {
+        background: #fff;
+        border-radius: 0;
+    }
+    .banner
+    {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1,
+    .sec2 h2
+    {
+        font-size: 2rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .sec1
+    {
+        padding: 20px 0;
+    }
+    .headerText h2
+    {
+        font-size: 2rem;
+    }
+    .blog
+    {
+        padding: 20px 0;
+    }
+    .contact
+    {
+        padding: 20px 0;
+    }
+    .contact .form-control
+    {
+        height: 40px;
+        border: 1px solid #fff;
+    }
+    .btnD1
+    {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+    footer
+    {
+        background: #000;
+        padding: 0px 0 20px;
+    }
+    .sci li 
+    {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .sci li a
+    {
+        color: #777;
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+    .sec2
+    {
+        height: auto;
+        padding: 40px 0;
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    background-image: url(../PROJECT/assets/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    
+    /* Full viewport height for the page */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    /* Center content vertically and horizontally */
+    display: flex;
+    flex-direction: column; /* Ensure content is arranged vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Adding smooth transition */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+    font-size: 4rem; /* Make heading larger */
+    margin-bottom: 40px; /* Increased space below heading */
+    text-shadow: none; /* Removed the text shadow */
+}
+
+p {
+    font-size: 1.2rem; /* Slightly larger paragraph text */
+    margin: 0 20px; /* Space around the text */
+    text-shadow: none; /* Removed the text shadow */
+}
+
+/* Hover effect */
+body:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+h1:hover, p:hover {
+    /* No shadow effect on hover anymore */
+}
